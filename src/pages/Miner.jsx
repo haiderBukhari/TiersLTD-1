@@ -31,8 +31,6 @@ const Miner = () => {
                         ))
                     }
                 </div>
-                {/* <MiningComponent /> */}
-                {/* <MiningComponent /> */}
             </div>
         </div>
     )
