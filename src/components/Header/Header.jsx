@@ -12,9 +12,9 @@ export function Header() {
                 <Link to="/miner3" className="cursor-pointer" style={{zIndex: 20}} >Pakete</Link>
                 <Link to="/miner4" className="cursor-pointer" style={{zIndex: 20}} >Kontakt</Link>
             </div>
-            <div className="justify-center px-3 py-3.5 text-base text-center whitespace-nowrap rounded-xl border border-solid bg-[linear-gradient(225deg,#18C8FF_14.89%,#933FFE_85.85%)] border-white border-opacity-50">
+            <Link to="/register" style={{zIndex: 20}} className="justify-center px-3 py-3.5 text-base text-center whitespace-nowrap rounded-xl border border-solid bg-[linear-gradient(225deg,#18C8FF_14.89%,#933FFE_85.85%)] border-white border-opacity-50">
                 Kundenportal
-            </div>
+            </Link>
         </div>
     );
 }
