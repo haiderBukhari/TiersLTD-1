@@ -18,14 +18,14 @@ export function Hero() {
         //     </div>
         // </div>
         <div className="flex flex-col justify-center text-center">
-            <div className="flex overflow-hidden relative flex-col items-center pt-0 pb-20 w-full min-h-[711px] max-md:px-5">
+            <div className="flex overflow-hidden relative flex-col items-center pt-0 md:pb-20 w-full md:min-h-[711px] max-md:px-5">
                 <Header show={show} setShow={setShow} />
                 {!show && (
                     <>
                         <img
                             loading="lazy"
                             srcSet="https://cdn.builder.io/api/v1/image/assets/TEMP/4e61d6e915e53fdbc675c448976084b65671aebdc7afc0700cc5c2d2e950f14c?apiKey=cf358c329e0d49a792d02d32277323ef&width=100 100w, https://cdn.builder.io/api/v1/image/assets/TEMP/4e61d6e915e53fdbc675c448976084b65671aebdc7afc0700cc5c2d2e950f14c?apiKey=cf358c329e0d49a792d02d32277323ef&width=200 200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4e61d6e915e53fdbc675c448976084b65671aebdc7afc0700cc5c2d2e950f14c?apiKey=cf358c329e0d49a792d02d32277323ef&width=400 400w, https://cdn.builder.io/api/v1/image/assets/TEMP/4e61d6e915e53fdbc675c448976084b65671aebdc7afc0700cc5c2d2e950f14c?apiKey=cf358c329e0d49a792d02d32277323ef&width=800 800w, https://cdn.builder.io/api/v1/image/assets/TEMP/4e61d6e915e53fdbc675c448976084b65671aebdc7afc0700cc5c2d2e950f14c?apiKey=cf358c329e0d49a792d02d32277323ef&width=1200 1200w, https://cdn.builder.io/api/v1/image/assets/TEMP/4e61d6e915e53fdbc675c448976084b65671aebdc7afc0700cc5c2d2e950f14c?apiKey=cf358c329e0d49a792d02d32277323ef&width=1600 1600w, https://cdn.builder.io/api/v1/image/assets/TEMP/4e61d6e915e53fdbc675c448976084b65671aebdc7afc0700cc5c2d2e950f14c?apiKey=cf358c329e0d49a792d02d32277323ef&width=2000 2000w, https://cdn.builder.io/api/v1/image/assets/TEMP/4e61d6e915e53fdbc675c448976084b65671aebdc7afc0700cc5c2d2e950f14c?apiKey=cf358c329e0d49a792d02d32277323ef&"
-                            className="object-cover absolute inset-0 size-full mt-[-30px]"
+                            className="hidden md:block object-cover absolute inset-0 size-full mt-[-30px]"
                         />
                         <div className="flex relative flex-col mb-10 max-w-full w-[879px] max-md:mb-10">
                             <img

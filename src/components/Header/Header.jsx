@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { Menu, X } from 'lucide-react';
 
 export function Header({ show, setShow }) {
     return (
@@ -7,7 +8,9 @@ export function Header({ show, setShow }) {
                 <Link to="/" className="text-xl text-white font-medium" style={{ fontFamily: "Krona One" }}>
                     Swiss Mining
                 </Link>
-                <p onClick={() => { setShow(!show) }}>Show</p>
+                {
+                    !show ? <p onClick={() => { setShow(!show) }}><Menu /></p> : <p onClick={() => { setShow(!show) }}><X /></p>
+                }
             </div>
             <Link to="/" className="mt-3.5 text-xl text-white font-medium hidden md:block" style={{ fontFamily: "Krona One" }}>
                 Swiss Mining
