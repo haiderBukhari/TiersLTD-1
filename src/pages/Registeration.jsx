@@ -12,14 +12,14 @@ const Registeration = () => {
     const [email, setEmail] = useState('')
     return (
         <div className="relative overflow-hidden min-h-[300vh]">
-            <img src={Bitcoin} alt='' className="absolute" />
-            <img src={Ethereum} alt='' className="absolute top-[30%] left-[-1%]" />
-            <img src={Ethereum1} alt='' className="absolute top-[63%] left-[-2%]" />
+            <img src={Bitcoin} alt='' className="hidden md:block absolute" />
+            <img src={Ethereum} alt='' className="hidden md:block absolute top-[30%] left-[-1%]" />
+            <img src={Ethereum1} alt='' className="hidden md:block absolute top-[63%] left-[-2%]" />
             <img src={group} alt='' className="absolute top-[0%] right-0" style={{ zIndex: "1" }} />
             <img src={group3} alt='' className="absolute top-[0%] left-0" style={{ zIndex: "1" }} />
-            <img src={Ethereum1} alt='' className="absolute top-[19%] right-[-4%]" />
-            <img src={Bitcoin} alt='' className="absolute top-[50%] right-[-1%]" />
-            <img src={Ethereum} alt='' className="absolute top-[78%] right-[-3%]" />
+            <img src={Ethereum1} alt='' className="hidden md:block absolute top-[19%] right-[-4%]" />
+            <img src={Bitcoin} alt='' className="hidden md:block absolute top-[50%] right-[-1%]" />
+            <img src={Ethereum} alt='' className="hidden md:block absolute top-[78%] right-[-3%]" />
             <div className="px-[100px]">
                 <div style={{ fontSize: "78px" }} className="flex flex-col justify-center font-black text-center text-white leading-[110.5px] max-md:text-4xl mb-10">
                     <div className="justify-center px-5 w-full max-md:max-w-full max-md:text-4xl mt-20">
