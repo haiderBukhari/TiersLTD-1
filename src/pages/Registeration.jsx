@@ -12,7 +12,6 @@ const Registeration = () => {
     const [email, setEmail] = useState('')
     return (
         <div className="relative overflow-hidden min-h-[300vh]">
-            <Header />
             <img src={Bitcoin} alt='' className="absolute" />
             <img src={Ethereum} alt='' className="absolute top-[30%] left-[-1%]" />
             <img src={Ethereum1} alt='' className="absolute top-[63%] left-[-2%]" />

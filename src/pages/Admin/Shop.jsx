@@ -5,18 +5,19 @@ import group3 from '../../assets/Group 3.png'
 import { Header } from '../../components/Header/Header'
 import AdminAsideNavbar from './../../components/AdminAsideNavbar';
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const AdminShop = () => {
+    const [show, setShow] = useState(false);
     return (
         <div className="relative overflow-hidden min-h-[120vh]">
-            <Header />
-            <img src={Bitcoin} alt='' className="absolute top-[80%]" style={{ zIndex: 100 }} />
+            <img src={Bitcoin} alt='' className="hidden md:block absolute top-[80%]" style={{ zIndex: 100 }} />
             <img src={group} alt='' className="absolute top-[0%] right-0" style={{ zIndex: "1" }} />
             <img src={group3} alt='' className="absolute top-[0%] left-0" style={{ zIndex: "1" }} />
-            <img src={Ethereum1} alt='' className="absolute top-[7%] right-[-4%]" />
-            <div className='flex justify-between w-full relative max-w-[1230px]' style={{ zIndex: 10 }}>
+            <img src={Ethereum1} alt='' className="hidden md:block absolute top-[7%] right-[-4%]" />
+            <div className='flex flex-col md:flex-row justify-between w-full relative max-w-[1230px]' style={{ zIndex: 10 }}>
                 <AdminAsideNavbar />
-                <div className="bg-[rgba(36,42,72)] bg-opacity-50 px-4 pl-6" style={{ borderRadius: "20px", height: "500px", maxWidth: "900px", width: "100%" }}>
+                <div className="bg-[rgba(36,42,72)] bg-opacity-50 px-4 pl-6 mt-5 md:mt-0" style={{ borderRadius: "20px", height: "500px", maxWidth: "900px", width: "100%" }}>
                     <h1 className='text-white text-3xl font-bold mt-7'>Shop</h1>
                     <div>
                         <div className='flex justify-between mt-6 mb-4'>
@@ -27,7 +28,7 @@ const AdminShop = () => {
                         </div>
                         <div className='bg-[#1A1B23] mt-2 rounded-lg py-2 flex px-5 justify-between w-full'>
                             <h1 className='text-white text-xl font-bold'>S19</h1>
-                            <div className='flex justify-between w-[28%]'>
+                            <div className='flex flex-col md:flex-row justify-between w-[28%]'>
                                 <h1 className='text-[#B23343] text-xl font-bold'>Entfernen</h1>
                                 <h1 className='text-[#18A786] text-xl font-bold'>Bearbeiten</h1>
                             </div>

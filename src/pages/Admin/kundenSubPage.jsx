@@ -5,52 +5,57 @@ import group3 from '../../assets/Group 3.png'
 import { Header } from '../../components/Header/Header'
 import AdminAsideNavbar from './../../components/AdminAsideNavbar';
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 const AdminKundenSubPage = () => {
     return (
         <div className="relative overflow-hidden min-h-[120vh]">
-            <Header />
-            <img src={Bitcoin} alt='' className="absolute top-[46%]" style={{ zIndex: 100 }} />
+            <img src={Bitcoin} alt='' className="hidden md:block absolute top-[46%]" style={{ zIndex: 100 }} />
             <img src={group} alt='' className="absolute top-[0%] right-0" style={{ zIndex: "1" }} />
             <img src={group3} alt='' className="absolute top-[0%] left-0" style={{ zIndex: "1" }} />
-            <img src={Ethereum1} alt='' className="absolute top-[7%] right-[-4%]" />
-            <div className='flex justify-between w-full relative max-w-[1230px]' style={{ zIndex: 10 }}>
+            <img src={Ethereum1} alt='' className="hidden md:block absolute top-[7%] right-[-4%]" />
+            
+            <div className='flex flex-col md:flex-row justify-between w-full relative max-w-[1230px]' style={{ zIndex: 10 }}>
                 <AdminAsideNavbar />
-                <div className="flex justify-between items-center w-[900px]">
+                <div className="flex justify-between items-center max-w-[900px] mt-5 md:mt-0">
                     <div className="bg-[#272E51] bg-opacity-45 py-3 pb-16 px-5 max-w-[100%] mx-2 w-full min-h-[495px] h-full rounded-[32px]">
-                    <h1 className='text-white text-3xl font-bold pl-10 mt-4 mb-4'>Meric Ates</h1>
-                        <div className="flex justify-between px-5 max-w-[800px] mx-auto pt-5">
-                            <div>
-                                <div className="text-2xl font-bold text-white">
-                                    Vorname
-                                </div>
-                                <input type='' className="w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
+                    <h1 className='text-white text-3xl font-bold pl-4 md:pl-10 mt-4 mb-4'>Meric Ates</h1>
+                    <div className="flex justify-between items-center mt-7 md:mt-0">
+                        <div className="bg-[#272E51] py-3 pb-16 md:px-5 max-w-[100%] md:mx-2 w-full min-h-[495px] h-full rounded-[32px]">
+                            <div className="flex flex-col md:flex-row justify-between px-5 max-w-[800px] mx-auto pt-5">
+                                <div>
+                                    <div className="text-2xl font-bold text-white">
+                                        Vorname
+                                    </div>
+                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
 
-                                <div className="text-2xl font-bold text-white mt-5">
-                                    Nachname
+                                    <div className="text-2xl font-bold text-white mt-5">
+                                        Nachname
+                                    </div>
+                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
                                 </div>
-                                <input type='' className="w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
-                            </div>
-                            <div>
-                                <div className="text-2xl font-bold text-white">
-                                    Adresse
-                                </div>
-                                <input type='' className="w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
+                                <div>
+                                    <div className="text-2xl font-bold text-white mt-5 md:mt-0">
+                                        Adresse
+                                    </div>
+                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
 
-                                <div className="text-2xl font-bold text-white mt-5">
-                                    Postleitzahl
+                                    <div className="text-2xl font-bold text-white mt-5">
+                                        Postleitzahl
+                                    </div>
+                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
+                                    <div className="text-2xl font-bold text-white mt-5">
+                                        Ort
+                                    </div>
+                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
+                                    <div className="text-2xl font-bold text-white mt-5">
+                                        Email
+                                    </div>
+                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-[#D9D9D9] py-4 mt-2 rounded-md" />
                                 </div>
-                                <input type='' className="w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
-                                <div className="text-2xl font-bold text-white mt-5">
-                                    Ort
-                                </div>
-                                <input type='' className="w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
-                                <div className="text-2xl font-bold text-white mt-5">
-                                    Email
-                                </div>
-                                <input type='' className="w-[350px] bg-[#D9D9D9] py-4 mt-2 rounded-md" />
                             </div>
                         </div>
+                    </div>
                         <div>
                             <div className='flex justify-between mt-10'>
                                 <h1 className='text-white text-3xl font-bold'>Kunden</h1>
@@ -72,7 +77,7 @@ const AdminKundenSubPage = () => {
                             </div>
                             <div className='bg-[#1A1B23] mt-2 rounded-lg py-2 flex px-5 justify-between w-full'>
                                 <h1 className='text-white text-xl font-bold'>1.1.2024</h1>
-                                <div className='flex justify-between w-[25%]'>
+                                <div className='flex flex-col md:flex-row justify-between w-[25%]'>
                                     <h1 className='text-[#B23343] text-xl font-bold'>Entfernen</h1>
                                     <h1 className='text-[#18A786] text-xl font-bold'>Offen</h1>
                                 </div>

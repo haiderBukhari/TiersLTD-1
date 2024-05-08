@@ -8,17 +8,16 @@ import group from '../assets/Group 2.png'
 const Miner = () => {
     return (
         <div className="relative overflow-hidden">
-            <Header />
-            <img src={Bitcoin} alt='' className="absolute"/>
-            <img src={Ethereum} alt='' className="absolute top-[30%]"/>
-            <img src={Ethereum1} alt='' className="absolute top-[63%]"/>
+            <img src={Bitcoin} alt='' className="hidden md:block absolute"/>
+            <img src={Ethereum} alt='' className="hidden md:block absolute top-[30%]"/>
+            <img src={Ethereum1} alt='' className="hidden md:block absolute top-[63%]"/>
             <img src={group} alt='' className="absolute top-[13%] right-0"/>
-            <img src={Ethereum1} alt='' className="absolute top-[19%] right-[-3%]"/>
-            <img src={Bitcoin} alt='' className="absolute top-[50%] right-0"/>
-            <img src={Ethereum} alt='' className="absolute top-[78%] right-0"/>
-            <div className="px-[100px]">
+            <img src={Ethereum1} alt='' className="hidden md:block absolute top-[19%] right-[-3%]"/>
+            <img src={Bitcoin} alt='' className="hidden md:block absolute top-[50%] right-0"/>
+            <img src={Ethereum} alt='' className="hidden md:block absolute top-[78%] right-0"/>
+            <div className="px-[10px] md:px-[100px]">
                 <div style={{fontSize: "78px"}} className="flex flex-col justify-center font-black text-center text-white leading-[110.5px] max-md:text-4xl mb-10">
-                    <div className="justify-center px-5 w-full max-md:max-w-full max-md:text-4xl mt-20">
+                    <div className="justify-center w-full md:px-5 w-full max-md:max-w-full text-2xl md:text-4xl mt-20">
                         Suche deinen Miner aus
                     </div>
                 </div>

@@ -3,7 +3,7 @@ export function NewsLetter() {
         <div className="flex justify-center items-center h-[40vh] mt-20 pt-20 mb-20 pb-20">
             <div className="flex flex-col max-w-[780px]">
                 <div className="flex flex-col px-5 text-center text-white max-md:max-w-full">
-                    <div className="w-full text-5xl font-black leading-[65px] max-md:max-w-full max-md:text-4xl">
+                    <div className="w-full text-2xl md:text-5xl font-black leading-[30px] md:leading-[65px] max-md:max-w-full">
                         Newsletter anmelden
                     </div>
                     <div className="self-center mt-4 text-base leading-6 max-md:max-w-full">

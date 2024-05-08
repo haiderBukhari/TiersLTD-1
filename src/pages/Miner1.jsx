@@ -8,7 +8,6 @@ import group3 from '../assets/Group 3.png'
 const Miner1 = () => {
     return (
         <div className="relative overflow-hidden min-h-[300vh]">
-            <Header />
             <img src={Bitcoin} alt='' className="absolute" />
             <img src={Ethereum} alt='' className="absolute top-[30%] left-0" />
             <img src={Ethereum1} alt='' className="absolute top-[63%]" />
