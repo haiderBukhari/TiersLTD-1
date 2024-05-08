@@ -2,15 +2,11 @@ import Bitcoin from '../../assets/Bitcoin-1.png'
 import Ethereum1 from '../../assets/Monero-2 copy 3.png'
 import group from '../../assets/Group 2.png'
 import group3 from '../../assets/Group 3.png'
-import { Header } from '../../components/Header/Header'
 import AdminAsideNavbar from './../../components/AdminAsideNavbar';
-import { useState } from 'react'
 
 const AdminMiner = () => {
-    const [show, setShow] = useState(false);
     return (
         <div className="relative overflow-hidden min-h-[120vh]">
-            <Header show={show} setShow={setShow}/>
             <img src={Bitcoin} alt='' className="hidden md:block absolute top-[80%]" style={{ zIndex: 100 }} />
             <img src={group} alt='' className="absolute top-[0%] right-0" style={{ zIndex: "1" }} />
             <img src={group3} alt='' className="absolute top-[0%] left-0" style={{ zIndex: "1" }} />

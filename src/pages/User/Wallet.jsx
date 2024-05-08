@@ -2,9 +2,7 @@ import Bitcoin from '../../assets/Bitcoin-1.png'
 import Ethereum1 from '../../assets/Monero-2 copy 3.png'
 import group from '../../assets/Group 2.png'
 import group3 from '../../assets/Group 3.png'
-import { Header } from '../../components/Header/Header'
 import UserAsideNavbar from '../../components/UserAsideNavbar'
-import { useState } from 'react'
 
 const Wallet = () => {
     return (
