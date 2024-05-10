@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       {
-        location.pathname !== '/' && <Header show={show} setShow={setShow} />
+        (location.pathname === '/miner' || location.pathname === '/miner2' || location.pathname === '/miner3' || location.pathname === '/miner4' || location.pathname === '/register') && <Header show={show} setShow={setShow} />
       }
       {
         !show && <ReactRoutes />
