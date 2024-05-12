@@ -26,7 +26,7 @@ const Registeration = () => {
                         Anmelden
                     </div>
                 </div>
-                <div className="bg-zinc-900 p-6 md:p-16 rounded-[107px] relative" style={{ zIndex: 12 }}>
+                <div className="bg-zinc-900 bg-opacity-50 p-6 md:p-16 rounded-[107px] relative" style={{ zIndex: 12 }}>
                     <div className="flex justify-between items-center">
                         <div className="bg-[#272E51] py-3 pb-16 px-5 max-w-[100%] mx-2 w-full min-h-[440px] h-full rounded-[32px]">
                             <div className="flex flex-col justify-center items-center px-5 max-w-[800px] mx-auto pt-5">

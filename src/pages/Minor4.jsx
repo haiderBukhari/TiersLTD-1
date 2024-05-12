@@ -23,7 +23,7 @@ const Miner4 = () => {
                         Kontakt
                     </div>
                 </div>
-                <div className="bg-zinc-900 min-h-[1009px] p-5 md:p-10 rounded-[107px] relative" style={{ zIndex: 12 }}>
+                <div className="bg-zinc-900 bg-opacity-50 min-h-[1009px] p-5 md:p-10 rounded-[107px] relative" style={{ zIndex: 12 }}>
                     <div className="flex flex-wrap md:justify-between items-center">
                         <img
                             loading="lazy"

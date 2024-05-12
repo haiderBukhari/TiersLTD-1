@@ -24,7 +24,7 @@ const Miner2 = () => {
                         Anmelden
                     </div>
                 </div>
-                <div className="bg-zinc-900 min-h-[400px] p-10 px-10 md:px-20 rounded-[107px] relative flex justify-between items-center flex-wrap" style={{ zIndex: 20 }}>
+                <div className="bg-zinc-900 bg-opacity-50 min-h-[400px] p-10 px-10 md:px-20 rounded-[107px] relative flex justify-between items-center flex-wrap" style={{ zIndex: 20 }}>
                     <div className="bg-[#272E51] bg-opacity-50 min-h-[241px] md:mr-5 md:flex-1 rounded-[32px] flex items-center justify-center w-full">
                         <div className="text-lg font-semibold text-white mt-1 w-full text-center">
                         Anmelden

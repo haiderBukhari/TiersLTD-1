@@ -22,7 +22,7 @@ const Miner1 = () => {
                         Zusammenstellung
                     </div>
                 </div>
-                <div className="bg-zinc-900 min-h-[909px] p-10 rounded-[107px] relative" style={{zIndex: 12}}>
+                <div className="bg-zinc-900 bg-opacity-50 min-h-[909px] p-10 rounded-[107px] relative" style={{zIndex: 12}}>
                     <div className="flex justify-between items-center">
                         <img
                             loading="lazy"

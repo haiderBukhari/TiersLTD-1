@@ -22,7 +22,7 @@ const Miner3 = () => {
                         Ihre Kontaktdaten
                     </div>
                 </div>
-                <div className="bg-zinc-900 min-h-[1309px] p-3 md:p-10 rounded-[107px] relative" style={{ zIndex: 12 }}>
+                <div className="bg-zinc-900 bg-opacity-50 min-h-[1309px] p-3 md:p-10 rounded-[107px] relative" style={{ zIndex: 12 }}>
                     <div className="flex justify-between items-center mt-7 md:mt-0">
                         <div className="bg-[#272E51] bg-opacity-50 py-3 pb-16 md:px-5 max-w-[100%] mx-2 w-full min-h-[495px] h-full rounded-[32px]">
                             <div className="flex flex-col md:flex-row justify-between px-5 max-w-[800px] mx-auto pt-5">

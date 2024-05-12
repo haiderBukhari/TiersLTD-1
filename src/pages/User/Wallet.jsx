@@ -10,7 +10,7 @@ const Wallet = () => {
     const [show, setShow] = useState(false);
 
     return (
-        <div className="relative overflow-hidden min-h-[120vh]">
+        <div className="relative overflow-hidden min-h-[120vh] mt-6 md:mt-0  px-4">
             <img src={Bitcoin} alt='' className="block absolute top-[69%] md:top-[80%]" style={{ zIndex: 100 }} />
             <img src={group} alt='' className="absolute top-[0%] right-0 hidden md:block" style={{ zIndex: "1" }} />
             <img src={group3} alt='' className="absolute top-[0%] left-0 hidden md:block" style={{ zIndex: "1" }} />
