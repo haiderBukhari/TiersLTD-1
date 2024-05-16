@@ -1,7 +1,9 @@
 import builderPic from '../assets/bg-gradient-img.png'
 import mirror from '../assets/mirror.png'
+import { useNavigate } from 'react-router-dom';
 
 export function Builder() {
+    const Navigate = useNavigate();
     return (
         <div>
             <div className="flex items-center flex-wrap gap-5 max-md:flex-col max-md:gap-0 mt-20 justify-between ">
@@ -24,7 +26,7 @@ export function Builder() {
                                 Überwacht und bietet die höchste Sicherheit
                             </div>
                         </div>
-                        <button className="justify-center self-start px-8 py-6 mt-8 text-base font-semibold leading-4 text-center text-white rounded-xl border border-white border-solid max-md:px-5 ml-5">
+                        <button onClick={() => {Navigate('/miner')}} className="justify-center self-start px-8 py-6 mt-8 text-base font-semibold leading-4 text-center text-white rounded-xl border border-white border-solid max-md:px-5 ml-5">
                             Jetzt Minen
                         </button>
                     </div>
@@ -41,7 +43,7 @@ export function Builder() {
                             Geld auf dein Wallet gutgeschrieben.{" "}
                         </div>
                     </div>
-                    <div className="justify-center self-start px-7 py-6 mt-8 text-base font-semibold leading-4 text-center text-white rounded-xl border border-solid bg-[linear-gradient(225deg,#18C8FF_14.89%,#933FFE_85.85%)] border-white border-opacity-50 max-md:px-5 ml-4">
+                    <div onClick={() => {Navigate('/miner')}} className="justify-center self-start px-7 py-6 mt-8 text-base font-semibold leading-4 text-center text-white rounded-xl border border-solid bg-[linear-gradient(225deg,#18C8FF_14.89%,#933FFE_85.85%)] border-white border-opacity-50 max-md:px-5 ml-4">
                         Jetzt Hosten
                     </div>
                 </div>
@@ -65,7 +67,7 @@ export function Builder() {
                             <div className="mt-4 w-full text-base leading-6 text-slate-400 max-md:max-w-full">
                             Unsre Anlage wird mit 100% nachhaltigem Strom betrieben                             </div>
                         </div>
-                        <button className="justify-center self-start px-8 py-6 mt-8 text-base font-semibold leading-4 text-center text-white rounded-xl border border-white border-solid max-md:px-5 ml-5">
+                        <button onClick={() => {Navigate('/miner')}}  className="justify-center self-start px-8 py-6 mt-8 text-base font-semibold leading-4 text-center text-white rounded-xl border border-white border-solid max-md:px-5 ml-5">
                         Jetzt Minen
                         </button>
                     </div>

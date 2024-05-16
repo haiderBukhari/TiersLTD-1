@@ -30,27 +30,26 @@ const Miner3 = () => {
                                     <div className="text-2xl font-bold text-white">
                                         Vorname
                                     </div>
-                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
+                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-white py-3 mt-2 rounded-md" />
 
                                     <div className="text-2xl font-bold text-white mt-5">
                                         Nachname
                                     </div>
-                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
+                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-white py-3 mt-2 rounded-md" />
                                 </div>
                                 <div>
                                     <div className="text-2xl font-bold text-white mt-5 md:mt-0">
                                         Adresse
                                     </div>
-                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
-
+                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-white py-3 mt-2 rounded-md" />
                                     <div className="text-2xl font-bold text-white mt-5">
                                         Postleitzahl
                                     </div>
-                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
+                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-white py-3 mt-2 rounded-md" />
                                     <div className="text-2xl font-bold text-white mt-5">
                                         Ort
                                     </div>
-                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-[#D9D9D9] py-3 mt-2 rounded-md" />
+                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-white py-3 mt-2 rounded-md" />
                                     <div className="text-2xl font-bold text-white mt-5">
                                         Email
                                     </div>

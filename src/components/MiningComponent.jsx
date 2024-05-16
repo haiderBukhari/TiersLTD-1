@@ -1,6 +1,6 @@
 export function MiningComponent() {
     return (
-        <div className="flex flex-col items-center px-5 py-5 text-3xl font-extrabold leading-10 text-center text-white border-2 border-indigo-700 border-solid bg-zinc-900 max-w-[346px] rounded-[32px]">
+        <div className="flex flex-col items-center px-5 py-5 text-3xl font-extrabold leading-10 text-center text-white border-2 border-[#1D9F84] border-solid bg-black max-w-[346px] rounded-[32px]">
             <div>Antminer S19</div>
             <img
                 loading="lazy"

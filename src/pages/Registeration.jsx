@@ -4,7 +4,7 @@ import Ethereum from '../assets/Etherium-2 copy 1.png'
 import Ethereum1 from '../assets/Monero-2 copy 3.png'
 import group from '../assets/Group 2.png'
 import group3 from '../assets/Group 3.png'
-import { useNavigate } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import { useState } from "react"
 
 const Registeration = () => {
@@ -47,6 +47,9 @@ const Registeration = () => {
                                 }} className="justify-center px-3 py-3.5 text-base text-center whitespace-nowrap rounded-xl border border-solid bg-[linear-gradient(225deg,#18C8FF_14.89%,#933FFE_85.85%)] border-white border-opacity-50 max-w-[350px] w-full mt-10">
                                     Kundenportal
                                 </div>
+                                <Link to="/miner3" className="text-md font-bold text-white mt-10">
+                                    Create a new Account
+                                </Link>
                             </div>
                         </div>
                     </div>
