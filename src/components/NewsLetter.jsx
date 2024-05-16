@@ -12,7 +12,7 @@ export function NewsLetter() {
                     </div>
                 </div>
                 <div className="flex gap-2.5 self-center px-5 py-4 mt-8 text-sm leading-5 rounded-xl border border-cyan-400 border-solid shadow-lg backdrop-blur-[20px] text-slate-600">
-                    <input placeholder="Email Address" className="flex-1 my-auto bg-transparent border-none outline-none text-white"/>
+                    <input placeholder="Email Address" className="flex-1 my-auto bg-white border-none outline-none text-white"/>
                     <img
                         loading="lazy"
                         src="https://cdn.builder.io/api/v1/image/assets/TEMP/9207a4d79b3ad404d834b338e5990289335f6ffddc5515b6c284d24679f14fac?apiKey=cf358c329e0d49a792d02d32277323ef&"

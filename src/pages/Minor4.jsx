@@ -36,7 +36,7 @@ const Miner4 = () => {
                             </div>
                             <hr className="bg-white" style={{ paddingTop: "0.4px" }} />
                             <div className="flex flex-wrap md:flex-nowrap items-center mt-2">
-                                <p className="text-xl text-white text-justify md:text-center mt-3 md:mt-0">SwissMine GmbH Aaragauerstrasse 10 5734 Reinach AG</p>
+                                <p className="text-xl text-white text-justify md:text-center mt-3 md:mt-0 md:px-[48px] font-semibold">SwissMine24 GmbH Talacker 24 8001 Zurich</p>
                                 <img src={map} alt='' className="mt-6 md:mt-0" />
                             </div>
                             <div className="pt-16">

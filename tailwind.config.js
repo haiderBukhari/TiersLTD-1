@@ -7,6 +7,14 @@ export default {
   theme: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      addUtilities({
+        '.border-gradient': {
+          borderImage: 'linear-gradient(to right, #5B45B7, #1D9F84)',
+        },
+      });
+    },
+  ],
 }
 

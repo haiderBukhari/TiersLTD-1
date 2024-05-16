@@ -51,7 +51,7 @@ const AdminKundenSubPage = () => {
                                     <div className="text-2xl font-bold text-white mt-5">
                                         Email
                                     </div>
-                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-[#D9D9D9] py-4 mt-2 rounded-md" />
+                                    <input type='' className="max-w-[350px] w-full md:w-[350px] bg-white py-4 mt-2 rounded-md" />
                                 </div>
                             </div>
                         </div>

@@ -33,18 +33,18 @@ const Registeration = () => {
                                 <div className="text-2xl font-bold text-white">
                                     Email
                                 </div>
-                                <input onChange={(e)=>{setEmail(e.target.value)}} value={email} type='text' className="max-w-[350px] w-full bg-[#D9D9D9] py-3 mt-2 rounded-md" />
+                                <input onChange={(e)=>{setEmail(e.target.value)}} value={email} type='text' className="max-w-[350px] w-full bg-white py-3 mt-2 rounded-md" />
                                 <div className="text-2xl font-bold text-white mt-10">
                                     Password
                                 </div>
-                                <input type='password' className="max-w-[350px] w-full bg-[#D9D9D9] py-3 mt-2 rounded-md" />
+                                <input type='password' className="max-w-[350px] w-full bg-white py-3 mt-2 rounded-md" />
                                 <div onClick={() => {
                                     if(email.toLowerCase().includes('admin')){
                                         Navigate('/admin/miner');
                                     }else{
                                         Navigate('/user/dashboard')
                                     }
-                                }} className="justify-center px-3 py-3.5 text-base text-center whitespace-nowrap rounded-xl border border-solid bg-[linear-gradient(225deg,#18C8FF_14.89%,#933FFE_85.85%)] border-white border-opacity-50 max-w-[350px] w-full mt-10">
+                                }} className="justify-center px-3 py-3.5 text-base text-center whitespace-nowrap rounded-xl border border-solid bg-[linear-gradient(225deg,#18C8FF_14.89%,#933FFE_85.85%)] border-white border-opacity-50 max-w-[350px] w-full mt-10 text-white">
                                     Kundenportal
                                 </div>
                                 <Link to="/miner3" className="text-md font-bold text-white mt-10">

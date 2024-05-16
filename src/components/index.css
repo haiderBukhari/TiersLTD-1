@@ -1,0 +1,7 @@
+/* styles.css */
+.border-gradient {
+    border-width: 2px; /* Ensure this matches the border width you want */
+    border-style: solid;
+    border-image: linear-gradient(to left, #5B45B7, #1D9F84);
+    border-image-slice: 1;
+}
