@@ -3,7 +3,7 @@ export function MiningComponent() {
         position: 'relative',
         padding: '20px',
         border: '2px solid transparent', // Initial border setup
-        borderImage: 'linear-gradient(to left, #1D9F84 0%, #5B45B7 100%) 1',
+        borderImage: 'linear-gradient(to bottom, #1D9F84 0%, #5B45B7 100%) 1',
         boxSizing: 'border-box', // Ensures padding and border are included in the element's total width and height
     };
     return (
