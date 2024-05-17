@@ -9,8 +9,8 @@ import map from '../assets/map.png'
 
 const Miner4 = () => {
     const containerStyle = {
-        width: '100%',
-        height: '400px'
+        width: '540px',
+        height: '300px'
     };
 
     const center = {
