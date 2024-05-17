@@ -1,6 +1,14 @@
 export function MiningComponent() {
+    const cardStyle = {
+        position: 'relative',
+        padding: '20px',
+        borderRadius: '10px',
+        border: '2px solid transparent', // Initial border setup
+        borderImage: 'linear-gradient(to left, #1D9F84 0%, #5B45B7 100%) 1',
+        boxSizing: 'border-box', // Ensures padding and border are included in the element's total width and height
+    };
     return (
-        <div className="flex flex-col items-center px-5 py-5 text-3xl font-extrabold leading-10 text-center text-white border-2 border-r-[#1D9F84] border-b-[#1D9F84] border-t-[#5B45B7] border-l-[#5B45B7] border-solid bg-black max-w-[346px] rounded-[32px]">
+        <div style={cardStyle} className="flex flex-col items-center px-5 py-5 text-3xl font-extrabold leading-10 text-center text-white border-2 border-solid bg-black max-w-[346px] rounded-[32px]">
             <div>Antminer S19</div>
             <img
                 loading="lazy"

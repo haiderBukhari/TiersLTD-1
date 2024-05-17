@@ -2,11 +2,21 @@ import { Header } from "../components/Header/Header"
 import Bitcoin from '../assets/Bitcoin-1.png'
 import Ethereum from '../assets/Etherium-2 copy 1.png'
 import Ethereum1 from '../assets/Monero-2 copy 3.png'
+import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
 import group from '../assets/Group 2.png'
 import group3 from '../assets/Group 3.png'
 import map from '../assets/map.png'
 
 const Miner4 = () => {
+    const containerStyle = {
+        width: '100%',
+        height: '400px'
+    };
+
+    const center = {
+        lat: 47.37174, // Latitude for the address
+        lng: 8.53529  // Longitude for the address
+    };
     return (
         <div className="relative overflow-hidden min-h-[300vh]">
             <img src={Bitcoin} alt='' className="hidden md:block absolute" />
@@ -19,7 +29,7 @@ const Miner4 = () => {
             <img src={Ethereum} alt='' className="hidden md:block absolute top-[78%] right-[-3%]" />
             <div className="px-[10px] md:px-[100px]">
                 <div style={{ fontSize: "78px" }} className="flex flex-col justify-center font-black text-center text-white leading-[110.5px] max-md:text-4xl mb-10">
-                    <div style={{zIndex: 10}} className="justify-center px-5 w-full max-md:max-w-full max-md:text-4xl mt-20">
+                    <div style={{ zIndex: 10 }} className="justify-center px-5 w-full max-md:max-w-full max-md:text-4xl mt-20">
                         Kontakt
                     </div>
                 </div>
@@ -37,7 +47,17 @@ const Miner4 = () => {
                             <hr className="bg-white" style={{ paddingTop: "0.4px" }} />
                             <div className="flex flex-wrap md:flex-nowrap items-center mt-2">
                                 <p className="text-xl text-white text-justify md:text-center mt-3 md:mt-0 md:px-[48px] font-semibold">SwissMine24 GmbH Talacker 24 8001 Zurich</p>
-                                <img src={map} alt='' className="mt-6 md:mt-0" />
+                                <LoadScript googleMapsApiKey={import.meta.env.VITE_MAP_API_KEY}>
+                                    <GoogleMap
+                                        mapContainerStyle={containerStyle}
+                                        center={center}
+                                        zoom={15}
+                                    >
+                                        <Marker position={center} />
+                                    </GoogleMap>
+                                </LoadScript>
+
+                                {/* <img src={map} alt='' className="mt-6 md:mt-0" /> */}
                             </div>
                             <div className="pt-16">
                                 <div className="justify-center w-full max-md:max-w-full text-3xl font-bold text-white mt-1">
